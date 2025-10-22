@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan blog programming</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script>
+        function t() {
+            var e = document.getElementById("comments");
+            e.style.display ="none" === e.style.display ? "block" : "none";
+        }
+    </script>
+    <style>
+        h2 {
+            color: red;
+        }
+
+        button {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Teknologi Terbaru</h2>
+    <p>Teknologi terbaru mencakup kecerdasan buatan (AI) yang semakin canggih, komputasi kuantum untuk menyelesaikan masalah kompleks, ekspansi 5G dan penelitian 6G, serta inovasi realitas virtual (VR), augmented reality (AR), dan mixed reality (MR) untuk hiburan dan edukasi</p>
+    <button onclick="t()">Show/Hide Comments</button>
+    <div id="comments" style="display:none; margin-top:20px;">
+        <h3>Comments</h3>
+        <p>User1: Teknologi AI benar-benar mengubah cara kita hidup!</p>
+        <p>User2: Saya sangat tertarik dengan potensi komputasi kuantum.</p>
+        <p>User3: 5G telah meningkatkan kecepatan internet saya secara signifikan.</p>
+    </div>
+</body>
+</html>
