@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Kakak Asuh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-danger-subtle">
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="card shadow border-0">
+          <div class="card-header bg-danger text-white text-center fw-semibold">
+            Formulir Pendaftaran Kakak Asuh
+          </div>
+          <div class="card-body">
+
+            <form action="submit.php" method="post">
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap kamu" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Jenis Kelamin</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" required>
+                  <label class="form-check-label" for="male">Laki-laki</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" required>
+                  <label class="form-check-label" for="female">Perempuan</label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="notelp" class="form-label">Nomor WhatsApp</label>
+                <input type="text" class="form-control" id="notelp" placeholder="Masukkan Nomor WhatsApp" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="univ" class="form-label">Nama Universitas</label>
+                <input type="text" class="form-control" id="univ" placeholder="Masukkan Universitas" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="prodi" class="form-label">Program Studi</label>
+                <input type="text" class="form-control" id="prodi" placeholder="Masukkan Program Studi" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="opsi1" class="form-label">Opsi 1: Kamu tertarik buat masuk kemana nih?</label>
+                <select class="form-select" id="opsi1" required>
+                  <option value="">Pilih ...</option>
+                  <option>Ketua</option>
+                  <option>Wakil Ketua</option>
+                  <option>Sekretaris</option>
+                  <option>Bendahara</option>
+                  <option>Divisi Pendidikan</option>
+                  <option>Divisi PDD</option>
+                  <option>Divisi PSDM</option>
+                  <option>Divisi Humas</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="opsi2" class="form-label">Opsi 2: Kamu tertarik buat masuk kemana nih?</label>
+                <select class="form-select" id="opsi2" required>
+                  <option value="">Pilih ...</option>
+                  <option>Ketua</option>
+                  <option>Wakil Ketua</option>
+                  <option>Sekretaris</option>
+                  <option>Bendahara</option>
+                  <option>Divisi Pendidikan</option>
+                  <option>Divisi PDD</option>
+                  <option>Divisi PSDM</option>
+                  <option>Divisi Humas</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="alasan" class="form-label">Alasan mengikuti pengurus Kakak Asuh?</label>
+                <textarea class="form-control" id="alasan" rows="3" placeholder="Ceritakan alasan kamu..." required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-danger px-4">Kirim Formulir</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-NZfD8Lty+d5jXJ+wSzl6XbXIsWcROb8v4xUeqsR0C63cfY3M/CE7MRX6xKjN2t5D" crossorigin="anonymous"></script>
+</body>
+</html>
