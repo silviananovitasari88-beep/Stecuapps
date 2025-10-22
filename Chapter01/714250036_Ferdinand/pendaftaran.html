@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <h1>Pendaftaran Mahasiswa Baru</h1>
+    <form action="submit.php">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" required/>
+     <br/>
+        <label for="prodi">Prodi:</label>
+        <input type="text" id="prodi" name="prodi" required/>
+    <br/>
+     <label for="jalur">Jalur:</label>
+     <input type="radio" id="reguler" name="jalur" value="reguler"/>
+     <label for="reguler">Reguler</label>
+     <input 
+     type="radio"
+     id="reguler"
+     name="undangan"
+     value="reguler"
+     />
+     <label for="kip">KIP</label>
+     <input type="radio" id="kip" name="jalur" value="kip" />
+     <label for="undangan">Undangan</label>
+
+     <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+     <input type="submit" value="Daftar" />
+    </form>
+</body>
+</html>
