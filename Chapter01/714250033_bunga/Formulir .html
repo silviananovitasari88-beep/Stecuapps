@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheets" href="styles.css"/>
+    <style>
+    body {
+        font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        background: #282E6A;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        color: #f4d800;
+        text-align: left;
+        margin: 100px 40;
+        padding:40px;
+     }
+     p {
+        color: beige;
+        margin: 100px 40;
+        padding: 10px;
+     }
+     label {
+        color: beige;
+        margin: 100px 40;
+        padding: 10px;
+     }
+     </style>
+</head>
+<body>
+    <div>
+    <h1>Pendaftaran Foto Natra Studio</h1>
+    <form action="sumbit.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Nama Lengkap:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">No Telpon:</label>
+                </td>
+                <td>
+                    <input type="no" id="No" name="no" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Alamat:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" required />
+                </td>
+            </tr>
+            <td>
+                <label for="Rencana">Tanggal Rencana foto:</label>
+            </td>
+            <td>
+                <input type="text" id="name" required />
+            </td>
+            </tr>
+                 <td>
+                    <label for="Rencana">Jam Rencana foto:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required />
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <br />
+        <label for="experience">Theme:</label>
+        <input type="radio" id="beginner" name="experience" value="beginner"/>
+        <label for="beginner">Dark</label>
+        <input
+        type="radio"
+        id="intermediate"
+        name="experience"
+        value="intermediate"
+        />
+        <label for="intermediate">Warm</label>
+        <input type="radio" id="advanced" name="experience" value="advanced" />
+        <label for="advanced">Minimalist</label>
+        <br>
+        <br>
+        <label for="comment">Harapan dari Workshop:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        
+        <input type="submit" value="Daftar" />
+        
+    </form>
+</div>
+</body>
+</html>
