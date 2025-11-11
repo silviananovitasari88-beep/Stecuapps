@@ -1,0 +1,63 @@
+<!--
+  Nama: Achmad Fariz Supriatna
+  NIM : 714252007
+  Mata Kuliah: Pemrograman 1
+  Modul: 2 (Dasar Website)
+  Tanggal: 30 Oktober 2025
+-->
+  
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulir Pendaftaran</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header><h1>Formulir Pendaftaran</h1></header>
+
+  <main class="container">
+    <form id="formPendaftaran" action="#" method="post" onsubmit="return false;">
+      <label for="nama">Nama lengkap</label>
+      <input id="nama" name="nama" type="text" required />
+
+      <label for="nim">NIM</label>
+      <input id="nim" name="nim" type="text" required pattern="\d+" title="Masukkan NIM berupa angka" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="jurusan">Jurusan</label>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">--Pilih--</option>
+        <option>Teknik Informatika</option>
+        <option>Sains Data</option>
+        <option>Manajemen Logistik</option>
+        <option>Manajemen REkayasa</option>
+        <option>Bisnis Digital</option>
+        <option>Manajemen Transportasi</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="setuju" required />
+        Saya menyatakan data di atas benar.
+      </label>
+
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="hasil" aria-live="polite"></div>
+  </main>
+
+  <script>
+    // Contoh: handle submit sementara (tidak mengirim server)
+    document.getElementById('formPendaftaran').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(this);
+      let txt = 'Data diterima:\\n';
+      for (const [k,v] of data.entries()) txt += k + ': ' + v + '\\n';
+      document.getElementById('hasil').innerText = txt;
+    });
+  </script>
+</body>
+</html>
