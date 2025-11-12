@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 12</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script>
+        function t() {
+            var e = document.getElementById("comments");
+            e.style.display = "none" === e.style.display ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <h2>The Making of Our Newest Superhero</h2>
+    <p>Our super friend was born on the alien planet Krypton, meaning he had to take the time to learn the ways of Metropolis and the people who inhabit it. It appears Superman has not just embraced human kind, he's grown to love them.</p>
+    <button onclick="t()">Comment</button>
+    <div id="comments" style="display:none">
+        <h3>Comments</h3>
+        <p>LexBaldLuthor: This article is so useful!</p>
+        <p>LoisssLane: Loving this article!</p>
+    </div>
+</body>
+</html>
