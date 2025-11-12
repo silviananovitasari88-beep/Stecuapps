@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir pendaftaran</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+    <form action="submit.php" method="post">
+        <label for="name">
+            Nama lengkap
+        </label>
+        <br>
+        <input type="text" id="name" required>
+        <br>
+        <label for="number">Nomor telphone</label>
+        <br>
+        <input type="number" id="number" required>
+        <br>
+        <label for="date">Tanggal lahir</label>
+        <br>
+        <input type="date" id="date" required>
+        <br>
+        <label for="gender">Jenis kelamin</label>
+        <br>
+        <input type="radio" name="gender" id="gender" value="male">
+        <label for="gender">Laki laki</label>
+        <input type="radio" name="gender" id="gender" value="female">
+        <label for="gender">Perempuan</label>
+        <br>
+        <label for="addres">Alamat</label> <br>
+        <textarea name="addres" id="addres" rows="5"></textarea>
+        <br>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
