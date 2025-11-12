@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: teal;
+    }
+    form {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 6px;
+      border: 2px solid black;
+      width: 400px;
+      background-color: lightyellow;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+      background-color: green;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      color: darkslategrey;
+    }
+    </style>
+</head>
+<body>
+  <h1>Pendaftaran Minat Mahasiswa</h1>
+  <form action="submit.php" method="post">
+    <label for="name">Nama Lengkap:</label>
+    <input type="text" id="name" name="name" required />
+    <br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+    <br />
+
+    <label for="experience">Pengalaman:</label>
+    <input type="radio" id="beginner" name="experience" value="beginner" />
+    <label for="beginner">Pemula</label>
+
+    <input
+      type="radio"
+      id="intermediate"
+      name="experience"
+      value="intermediate"
+    />
+    <label for="intermediate">basket</label>
+
+    <input type="radio" id="advanced" name="experience" value="advanced" />
+    <label for="advanced">taekwondo</label>
+
+    <br />
+    <label for="comment">Alasan Memilih</label> <br />
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+    <br />
+
+    <input type="submit" value="Daftar" />
+  </form>
+</body>
+</html>

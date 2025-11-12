@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <header>Form Pendaftaran</header>
+        <form class="form" action="#">
+            <div class="input-box">
+                <label for="">Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan Nama Lengkap">
+            </div>
+            <div class="input-box">
+                <label for="">Email</label>
+                <input type="text" placeholder="Masukkan Email" required>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="">Nomor Telepon</label>
+                    <input type="number" placeholder="Masukkan Nomor Telepon" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Tanggal Lahir</label>
+                    <input type="date" placeholder="Masukkan Tanggal Lahir" required>
+                </div>
+            </div>
+            <div class="gender">
+                <h3>Jenis Kelamin</h3>
+                <div class="gender-option">
+                    <div class="gdr">
+                        <input type="radio" id="pria" name="gender" checked>
+                        <label for="pria">Pria</label>
+                    </div>
+                    <div class="gdr">
+                        <input type="radio" id="wanita" name="gender" checked>
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box address">
+                <label for="">Alamat</label>
+                <input type="text" placeholder="Masukkan Nama Jalan/Gang" required>
+                <input type="text" placeholder="Masukkan Nama Desa" required>
+                <div class="column">
+                    <div class="select-box">
+                        <select name="" id="">
+                            <option hidden>Kecamatan</option>
+                            <option value="Mojosari"></option>
+                            <option value="Awang-Awang"></option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Masukkan Kode Pos" required>
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="Masukkan Nama Desa" required>
+                    <input type="number" placeholder="Masukkan Kode Pos" required>
+                </div>
+            </div>
+            <button>Daftar</button>
+        </form>
+
+    </sections>
+</body>
+</html> 
