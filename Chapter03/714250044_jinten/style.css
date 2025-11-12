@@ -1,0 +1,58 @@
+header {
+    background-color: rgb(239, 137, 171);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(239, 137, 171);
+    padding: 10px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: rgb(239, 137, 171);
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+table {
+   border-collapse: collapse; 
+   width: 100%;
+   background-color: rgb(241, 242, 244);
+   margin: 20px auto;
+   box-shadow: 0 0 5px rgb(239, 137, 171);
+}
+
+th {
+    border: 1px solid rgb(239, 137, 171);
+    padding: 12px;
+    text-align: center;
+}
+
+tr, td {
+    border: 1px solid rgb(239, 137, 171);
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: beige;
+
+}
