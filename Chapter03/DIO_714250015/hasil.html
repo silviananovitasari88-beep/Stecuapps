@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Website Responsif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #34508b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #27ae60;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            flex: 70%;
+        }
+
+        footer {
+            background-color: #34508b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .main-content {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Responsif</h1>
+        <p>Website yang menyesuaikan dengan ukuran layar Anda</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Konten Utama</h2>
+            <p>Ini adalah contoh website responsif yang menggunakan CSS untuk menyesuaikan tampilan dengan berbagai ukuran layar. Website ini akan terlihat bagus di desktop, tablet, dan smartphone.</p>
+            
+            <h3>Fitur Responsif</h3>
+            <ul>
+                <li>Layout yang fleksibel</li>
+                <li>Navigasi yang menyesuaikan</li>
+                <li>Konten yang mudah dibaca</li>
+                <li>Desain yang modern</li>
+            </ul>
+
+            <p>Coba ubah ukuran browser Anda untuk melihat bagaimana website ini beradaptasi dengan ukuran layar yang berbeda!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Website Responsif. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
