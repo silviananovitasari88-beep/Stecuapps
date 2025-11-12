@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: crimson;
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 6px;
+            border: 2px solid black;
+            width: 400px;
+            background-color: antiquewhite;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[value="kirim"] {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        textarea[id="Deskripsi"] {
+            position: middle;
+        }
+
+        input[type="text"]{
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fromulir Pendaftaran</h1>
+    <form action="submit.php" method="post">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" nama="nama" required><br><br>
+      <label for="alamat">Email</label>
+      <input type="text" id="alamat" nama="alamat" required><br><br>
+    
+      <label for="beginner">Pemula</label>
+      <input 
+      type="radio" id="pengalaman" nama="experience" value="intermediate"/>
+      <label for="intermediate">Menengah</label><input type="radio" id="pengalaman" nama="experience" value="senior"/>
+      <label for="experience">Pengalaman</label>
+      <input type="radio" id="pengalaman" nama="experience" value="beginner"/>
+      <label for="Deskripsi">Deskripsi</label>
+      <textarea id="Deskripsi" nama="Deskripsi" rows="4" cols="50"></textarea>
+      <input type="submit" value="kirim" background="blueviolet">
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <style></style>
+  <body>
+    <form action="formulir.php" style="border: 1px solid #ccc">
+      <div class="container">
+        <h1>Daftar</h1>
+        <p>Tolong isi Kolom dibawah untuk melakukan pendaftaran.</p>
+        <hr />
+
+        <label for="nama"><b>Nama</b></label>
+        <input type="text" placeholder="Masukkan Nama" name="nama" required />
+        <br />
+        <label for="nim"><b>Nim</b></label>
+        <input type="text" placeholder="Masukkan Nim" name="nim" required />
+        <br />
+        <label for="psw"><b>Masukkan Password</b></label>
+        <input
+          type="password"
+          placeholder="Masukkan Password"
+          name="psw"
+          required
+        />
+        <br />
+        <label for="psw-ulangi"><b>Ulangi Password</b></label>
+        <input
+          type="password"
+          placeholder="Ulangi Password"
+          name="psw-ulangi"
+          required
+        />
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Ingat aku
+        </label>
+        <br />
+        <p>
+          Dengan mendaftarkan akun anda setuju untuk<a
+            href="#"
+            style="color: dodgerblue"
+            >Terms & Privacy</a
+          >
+        </p>
+        <br />
+        <div class="clearfix">
+          <button type="button" class="batalbtn">Batal</button>
+          <button type="submit" class="daftarbtn">Daftar</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
