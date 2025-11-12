@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #27ae60;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .main-content {
+            flex: 70%;
+        }
+        .sidebar {
+            flex: 30%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .main-content, 
+            .sidebar {
+                flex: 100%;
+            }
+        }    
+    </style>
+</head>
+<body>
+    <header>
+     <h1>Belajar Pemograman</h1>
+     <p>Selamat datang di kursus Pemograman pertama anda.</p>
+    </header>
+    <nav>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Services</a>
+     <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+            <h2>Selamat datang di kursus Pemograman</h2>
+            <p>ini adalah kursus pemograman pertama anda, yang akan membantu anda memahami dasar-dasar pemograman.Kami akan memperlajari berbagai bahasa pemograman,konsep dasar, dan cara memulai menjadi seorang pengembang perangkat lunak.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <ul>
+                <li>Modul 1: Pengenalan HTTML</li>
+                <li>Modul 2: Dasar CSS</li>
+                <li>Modul 3: Belajar JavaScript</li>
+            </ul>
+        </div>
+</body>
+</html>
