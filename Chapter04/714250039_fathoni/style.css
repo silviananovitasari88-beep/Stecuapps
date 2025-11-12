@@ -1,0 +1,91 @@
+body {
+    background-color: #ee8b5a;
+    display: flex;
+    justify-content: center;
+    font-family: "PT SANS", sans-serif;
+}
+
+.conntainer {
+    background-image: linear-gradient(to bottom, #d64215, #bcbdb9);
+    height: 400px;
+    width: 400px;
+    margin: 150px 0px 0px 0px;
+
+    border: 5px solid;
+    border-image-slice: (to bottom, #ee8b5a, #545750);
+}
+
+.banner { 
+    height: 150px;
+    width: 100%;
+}
+
+.bann {
+    width: 100%;
+}
+
+.profpic {
+    background-image: url(toni.png);
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    margin: -42px;
+    margin-left: 30px;
+    border: 10px solid #ee8b5a;
+    border-radius: 60px;
+}
+
+.aboutme {
+    background-color: #e2e3d6;
+    width: 400px;
+    height: 290px;
+    border-radius: 10px;
+
+    position: relative;
+    top: 31px;
+    left: 20px;
+}
+
+.dc-name{
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0px 0px 17px;
+}
+
+hr {
+    color: #d1d3b8;
+    width: 90%;
+}
+
+.id-dec {
+    color: #4f5761;
+}
+
+.aboutme-title {
+    margin: 0px;
+    padding: 0px 0px 0px 17px;
+}
+
+.description {
+    padding: 0px 0px 0px 10px;
+}
+
+.badges {
+    background-color: #d7d6e3;
+    width: 80px;
+    height: 40px;
+    margin: 27px 0px 0px 300px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.ig-badge {
+    width: 26px;
+    margin: 6px;
+}
+
+.sites-badge {
+    width: 26px;
+    margin-bottom: 8px;
+}
