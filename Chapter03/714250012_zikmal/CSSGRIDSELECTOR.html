@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID DAN SELECTOR</title>
+<style>
+   
+   .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+   }
+   
+   .item {
+    background-color: rgb(255, 69, 190);
+    color: rgb(0, 0, 106);
+    padding: 40px;
+    text-align: center;
+    font-size: 35;
+   }
+
+    .special {
+        background-color: rgb(51, 255, 0);
+
+    }
+     
+    .unique {
+        background-color: rgb(142, 178, 255)
+    }
+
+    .container{
+        font-style: italic;
+    }
+    </style>
+    </head>
+    <body>
+        <h1> CSS GRID DAN SELECTOR </h1>
+        <div class="container">
+            <div class="item">item 1 </div>
+            <div class="item">item 2 </div>
+            <div class="item special">item 3 (Special) </div>
+            <div class="item">item 4 </div>
+            <div class="item">item 5 </div>
+            <div class="item" id="unique">item 6 (unique)</div>
+            
+        </div>
+        <p> MASUK PAK EKO </p>
+        <p> DONE GA BANG </p>
+    </body>
+    
+</body>
+</html>
