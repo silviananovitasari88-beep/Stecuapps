@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELAJAR PEMBROGAMAN</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0%;
+            background-color: white;
+        }
+
+        header {
+            background-color: azure;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: aliceblue;
+            padding: 10px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 5px;
+            display: flex;
+
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            flex: 70%
+        }
+
+        .sidebar {
+            flex: 30%;
+        }
+
+        footer {
+            background-color: aqua;
+            color: azure;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /*responsivess */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content,
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BELAJAR PEMBROGAMAN</h1>
+        <p>SELAMAT DATANG DI KURSUS PEMBROGAMAN PERTAMA ANDA.</p>
+    </header>
+    <nav>
+        <a href="BERANDA"></a>
+        <a href="TENTANG KAMI"></a>
+        <a href="KURSUS"></a>
+        <a href="KONTAK"></a>
+    </nav>
+    <div class="conntainer">
+        <div class="main-contect" >
+            <h2>SELAMAT DATANG di KURSUS pembrogaman 1</h2>
+            <p>ini adalah kursus pembrogaman pertama anda,yang akan membantu anda
+                memahami dasar dasar pembrogaman.kami akan mempelajari berbagai
+                bahasa pembrogaman,konsep dasar,dan cara memulai menjadi seseorang pengembang perangkat lunak
+            </p>
+        </div>
+    </div class="sidebar">
+    <h3>
+        BAR SAMPING
+    </h3>
+    <ul>
+        <li>
+            mudul pembromanan 1
+        </li>
+        <li>
+            tugas pembrogaman 2
+        </li>
+        <li>
+            pembrogaman 3
+        </li>
+    </ul>
+</body>
+</html>
