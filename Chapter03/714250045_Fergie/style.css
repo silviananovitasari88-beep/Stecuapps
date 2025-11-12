@@ -1,0 +1,109 @@
+:root {
+  --primary: #636363;
+  --bg: #dde6ed;
+}
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #27374d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5fefd;
+  font-style: italic;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("https://cdn.wallpapersafari.com/56/47/3eNABc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.buy {
+  padding: 10rem 7% 1.4rem;
+}
+
+.buy h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+}
+
+
+.row {
+  display: inline-block;
+  position: relative;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+/* menu section */
+.buy p{
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.row-buy {
+  display: inline-table;
+  box-sizing: border-box;
+  padding-left: 5.5rem;
+}
+
+.menu-card {
+  text-align: center;
+  display: inline-table;
+  margin-top: 3rem;
+  padding-left: 1.5rem;
+}
+
+.menu-card-title {
+  margin: 1rem;
+}
+
+.menu-card-img {
+  width: 128px;
+  height: 179px;
+}
+
+.cta-buy {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #f5fefd;
+  background-color: #777777;
+  border-radius: 8px;
+}
