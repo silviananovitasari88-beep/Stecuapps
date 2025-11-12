@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #unik {
+            background-color: #f3218a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item-spesial {
+            background-color: #2231ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        p:first-letter {
+            font-size: 200%;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>grid dan selection</h1>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item-spesial">3 (spesial)</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item" id="unik">6 (unik)</div>
+
+        </div>
+        <P>Halo</P>
+        <p>perkenalkan</p>
+</body>
+</html>
