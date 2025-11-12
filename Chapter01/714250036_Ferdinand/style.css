@@ -1,0 +1,7 @@
+body {
+    min-height: 700px;
+}
+.jumbotron {
+    padding-top: 2rem 1rem;
+    background-color: #FEF3E2;
+}

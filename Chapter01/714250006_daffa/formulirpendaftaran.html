@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <h1>Pendaftaran Drag Race Brigif</h1>
+    <form action="submit.php" method="post">
+        <table>
+            <tr>
+                <td width="110">Nama Lengkap</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Race</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>BB Joki</td>
+                <td><input type="number""></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="jenis kelamin">Laki-Laki
+                    <input type="radio" name="jenis kelamin">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td><input type="checkbox">155cc STD
+                    <input type="checkbox">200cc Sunmori
+                    <input type="checkbox">FFA 
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat Lengkap</td>
+                <td><textarea name="comment" id="comment" cols="35" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Simpan">
+                    <input type="reset" value="Reset">
+                    <input type="button" value="Kembali">
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
