@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Responsif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4CAF50;
+        }
+
+        header.header {
+            background-color: #00ff33;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+            gap: 1rem;
+            padding: 8px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.12);
+        }
+
+        .container {
+           max-width: 1300px;
+           margin: 20px auto;
+           padding: 20px;
+           background-color: white;
+           border-radius: 5px;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+           justify-content: space-between;
+           box-sizing: border-box;
+        }
+
+        .main-content {
+            flex: 3;
+            min-width: 250px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 16px;
+            }
+            .sidebar, .main-content {
+               width: 100%;
+            }
+        }
+
+        /* small visual tweaks for lists/content */
+        .sidebar ul {
+            padding-left: 1rem;
+            margin: 0;
+        }
+        .sidebar li {
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Selamat Datang di Situs Asal-Asalan</h1>
+    </header>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Layanan</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Konten Utama</h2>
+            <p>Ini adalah area konten utama situs web responsif. Tambahkan teks, gambar atau komponen lain di sini.</p>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; 2025 Situs Asal-Asalan
+    </footer>
+</body>
+</html> 
