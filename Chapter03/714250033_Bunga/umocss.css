@@ -1,0 +1,77 @@
+/* Mengatur Tampilan Halaman */
+        body {
+        font: Arial, sans-serif;
+        background:linear-gradient( #2E4820,#3F7D1E );
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+     .element {
+        background: linear-gradient(to bottom right, 
+        #2E4820, #3F7D1E );
+    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #012408;
+        }
+    .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+   .retangle1 {
+     width: 1264px;
+     height: 50px;
+     padding:center;
+     background-color: #2b441e;
+     border-radius: 10px;
+     align-items: center;
+   } 
+.retangle2 {
+     width: 611px;
+     height: 280px;
+     padding: 16px;
+     background-color: #2b441e;
+     border-radius: 15px;
+     grid-column: span 3 / span 3;
+     grid-row: span 4 / span 4;
+     grid-row-start: 2;
+     gap:20px;
+}
+
+.retangle3 {
+     width: 405px;
+     height: 136px;
+     padding: 16px;
+     background-color: #2b441e;
+     border-radius: 15px;
+     grid-column: span 2 / span 2;
+     grid-row: span 2 / span 2;
+     grid-column-start: 4;
+     grid-row-start: 2;
+}
+
+.div4 {
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+.div6 {
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.div7 {
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+        

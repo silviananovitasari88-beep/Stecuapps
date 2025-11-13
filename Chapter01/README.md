@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Pengenalan API dan Tools
 Disini akan digunakan beberapa tools
 
@@ -27,7 +26,6 @@ to get ssh key in your computer, and put in your github or gitlab ssh key settin
 cat ~/.ssh/id_rsa.pub
 ```
 if there is no key appears, plese generate the key also set global config of git in next section and please add the public key to your github profile.
-=======
 # Pengenalan API dan Tools
 Disini akan digunakan beberapa tools
 
@@ -56,4 +54,3 @@ to get ssh key in your computer, and put in your github or gitlab ssh key settin
 cat ~/.ssh/id_rsa.pub
 ```
 if there is no key appears, plese generate the key also set global config of git in next section and please add the public key to your github profile.
->>>>>>> cc5c874869bd9c947452f354d9e48647a9a4201c

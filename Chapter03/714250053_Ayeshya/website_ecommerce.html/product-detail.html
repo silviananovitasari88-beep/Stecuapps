@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - AYEStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AYEStore</h1>
+        <nav>
+            <a href="website_e-commerce.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="product-detail">
+            <img src="images/keyboard.jpg" alt="Mechanical Keyboard">
+            <h2>RGB Mechanical Keyboard</h2>
+            <p>$129.99</p>
+            <p>Description: High-performance keyboard with customizable RGB lighting.</p>
+            <button onclick="addToCart('RGB Mechanical Keyboard', 129.99)">Add to Cart</button>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 AYEStore Gaming Hardware. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
