@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - AYEStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AYEStore</h1>
+        <nav>
+            <a href="website_e-commerce.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>All Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                    <img src="keyboard.jpg" alt="Mechanical Keyboard">
+                    <h4>RGB Mechanical Keyboard</h4>
+                    <p>$129.99</p>
+                    <button onclick="addToCart('RGB Mechanical Keyboard', 129.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="mouse.jpg" alt="Gaming Mouse">
+                    <h4>Wireless Gaming Mouse</h4>
+                    <p>$79.99</p>
+                    <button onclick="addToCart('Wireless Gaming Mouse', 79.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="monitor.jpg" alt="Gaming Monitor">
+                    <h4>Wide Gaming Monitor</h4>
+                    <p>$100.99</p>
+                    <button onclick="addToCart('Wide Gaming Monitor', 100.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="headphone.png" alt="Gaming Headphone">
+                    <h4>RGB Gaming Headphone</h4>
+                    <p>$50.99</p>
+                    <button onclick="addToCart('RGB Gaming Headphone', 50.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="XBOX.jpeg" alt="XBOX Controller">
+                    <h4>XBOX Controller S Series</h4>
+                    <p>$46.99</p>
+                    <button onclick="addToCart('XBOX Controller S Series', 46.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="PS4.webp" alt="PS4 Controller">
+                    <h4>Red PS4 Controller</h4>
+                    <p>$49.99</p>
+                    <button onclick="addToCart('Red PS4 Controller', 49.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="headphonemic.jpg" alt="Gaming Headphone with Mic">
+                    <h4>RGB Gaming Headphone with Mic</h4>
+                    <p>$39.99</p>
+                    <button onclick="addToCart('RGB Gaming Headphone with Mic', 39.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="mic.webp" alt="Gaming Microphone">
+                    <h4>Gaming Microphone</h4>
+                    <p>$29.99</p>
+                    <button onclick="addToCart('Gaming Microphone', 29.99)">Add to Cart</button>
+                </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="https://instagram.com/adgustiana" target="_blank">Instagram</a>
+            <a href="https://github.com/AyeshyaDGustiana" target="_blank">GitHub</a>
+        </div>
+        <p>&copy; 2025 AYEStore Gaming Hardware. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

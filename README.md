@@ -1,7 +1,7 @@
 # Stecuapps
 Ini adalah repository kelas 1A
 
-# kelompok projek 1
+# kelompok Tugas Besar
 kelompok 1
 1. fergi
 2. jinten

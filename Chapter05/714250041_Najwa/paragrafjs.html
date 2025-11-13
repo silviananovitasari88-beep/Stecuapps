@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function ubahKata() {
+            document.getElementById("text1").innerHTML = "Ini text yang udah diubah";
+        }
+        function balikinKata() {
+            document.getElementById("text1").innerHTML = "Ini ceritanya teks yang belum diubah";
+        }
+    </script>
+</head>
+<body>
+    <h2>Javascript di head</h2>
+    <p id="text1">Ini ceritanya teks yang belum diubah</p>
+    <center>
+        <button onclick="ubahKata()">Ubah Teks</button>
+        <button onclick="balikinKata()">Balikin Teks</button>
+    </center>
+</body>
+</html>
