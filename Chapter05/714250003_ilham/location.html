@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+    const x = document.getElementById("demo");
+    function geolocation() {
+        try {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } catch (err) {
+            x.innerHTML = err.message;
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML =
+        "latitude:" +
+        position.coords.latitude +
+        "<br>longitude:" +
+        position.coords.longitude;
+    }
+</script>
+<h2>
+    Java script menggunakan geolocation
+</h2>
+<h3>
+    klik button untuk menampilkan kordinat
+</h3>
+<button onclick="geolocation()">
+klik
+</button>
+</body>
+</html>
