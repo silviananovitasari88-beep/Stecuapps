@@ -1,0 +1,95 @@
+body{
+	font-family: monospace;
+	font-size: 13pt;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+
+}
+
+nav {
+    color: #000000;
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+}
+
+h1 {
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ 
+th{
+	text-align: left;
+}
+ 
+img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+ 
+.kotak{
+	border: 1px solid rgb(95, 0, 87);
+	width: 60%;
+	margin: 10px auto;
+	padding: 20px;
+}
+ 
+.judul{
+	text-align: center;
+        background: rgb(13, 255, 0);
+}
+ 
+.blok{
+	overflow: hidden;
+}
+ 
+.kiri{
+	width: 20%;
+	float: left;
+}
+ 
+.kanan{
+	width: 70%;
+	padding:0px 20px;	
+	float: left;
+}
+
+nav {
+    color: #000000;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color: rgb(255, 192, 243);
+    font-family: Helvetica;
+}
+ 
+@media only screen and (max-width: 768px) {
+	.kotak{
+		width: 100%;
+		padding: 0px;
+		border: none;
+	}
+	
+	.kiri{
+		width: 100%;
+	}
+ 
+	.kanan {
+		width: 100%;
+		padding: 0;
+    }
+
+}

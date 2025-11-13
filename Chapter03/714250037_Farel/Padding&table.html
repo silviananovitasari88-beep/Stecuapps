@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding dan Table</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: blue;
+            color: white;
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 3px solid black;
+            text-align: left;
+        }
+        th {
+            background-color: darkblue;
+        }
+        tr:hover {
+            background-color: lightgray;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center">Contoh Tabel dengan Padding dan Styling</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>kolom 1, Baris 1</th>
+                <th>kolom 2, Baris 1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>kolom 1, baris 2</td>
+                <td>kolom 2, baris 2</td>
+            </tr>
+            <tr>
+                <td>kolom 1, baris 3</td>
+                <td>kolom 2, baris 3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
