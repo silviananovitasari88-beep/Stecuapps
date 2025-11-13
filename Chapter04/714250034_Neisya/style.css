@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #233570;
+}
+
+
+
+section {
+  padding: 70px;
+}
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(enambelas.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner h2 {
+  font-size: 3em;
+  color: #000;
+  font-weight: 550;
+  line-height: 1.5em;
+  margin-top: 250px;
+}
+
+.banner h3 span {
+  color: #ffffff;
+}
+
+
+.banner h3 {
+  font-size: 1.4em;
+  color: #000000;
+  font-weight: 340;
+}
+.btn:hover {
+  letter-spacing: 4px;
+
+}
+.btn {
+  font-size: 1em;
+  color: #fff;
+  background: #e91c1c;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+    font-weight: 500;
+
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 75px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header .logo {
+  color: #fff;
+  font-weight: 750;
+  font-size: 2em;
+  text-decoration: none;
+}
+header .logo span {
+  color: #ff0157;
+}
