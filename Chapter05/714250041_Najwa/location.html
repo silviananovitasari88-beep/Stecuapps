@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript menggunakan geolocation</h2>
+    <button onclick="getLokasi()">Koordinat</button>
+    <p id="demo">Koordinat</p>
+    <script>
+        function getLokasi() {
+            try {
+                navigator.geolocation.getCurrentPosition(tunjukanLokasi)
+            } catch {
+                document.getElementById("demo").innerHTML = "Latitude " + position.coords.latitude + "<br> Longitude " + position.coords.longitude;
+            }
+        }
+        function tunjukanLokasi(position){
+            document.getElementById("demo").innerHTML = "Latitude " + position.coords.latitude + "<br> Longitude " + position.coords.longitude;
+            // document.getElementById("demo").innerHTML = "Ubah koor";
+        }
+    </script>
+</body>
+</html>
