@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Review HTML & CSS - Nabila</title>
+  <style>
+    :root{
+      --bg:#f4f4f4;
+      --card:#fff;
+      --primary:#4CAF50;
+      --muted:#555;
+    }
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:10px;
+      padding:28px;
+      width:100%;
+      max-width:640px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+    h1{color:#333;margin-top:0}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:14px 0}
+    button{
+      background:var(--primary);
+      color:#fff;
+      border:0;
+      padding:10px 16px;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:15px;
+      transition:transform .08s ease,filter .08s ease;
+    }
+    button.secondary{
+      background:#007bff;
+    }
+    button:active{transform:translateY(1px)}
+    p{color:var(--muted);line-height:1.6}
+    .small{font-size:14px;color:#666;margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Review HTML & CSS</h1>
+
+    <!-- 1. Button "klik" -->
+    <div class="buttons">
+      <button id="klikBtn">Klik</button>
+    </div>
+
+    <!-- 2. Dua Button dengan nama dan makanan favorit (teks berada di dalam button) -->
+    <div class="buttons">
+      <button class="secondary" id="namaBtn">Nabila Puspita Asih</button>
+      <button id="makananBtn">Makanan favorit ku adalah Dimsum</button>
+    </div>
+
+    <!-- 3. Paragraf "hello world" -->
+    <p><strong>Hello World</strong></p>
+
+    <!-- 4. Paragraf dan narasi tambahan -->
+    <p>
+      Halo! Nama saya <strong>Nabila Puspita Asih</strong>. Saya sedang belajar membuat halaman web sederhana menggunakan HTML dan CSS.
+      Pada tombol di atas, nama saya dan makanan favorit saya sudah dituliskan di dalam elemen button sesuai instruksi.
+    </p>
+
+    <p class="small">
+      Tips: Untuk melihat interaksi, buka file ini di browser. Tombol-tombol bisa ditambahkan fungsi JavaScript jika ingin menampilkan pesan atau melakukan aksi lain.
+    </p>
+  </div>
+</body>
+</html>
