@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="nama()">Nama saya</button>
+    <p id="nama" style="display: none;">Jinten Anggraeni</p>
+
+    <button onclick="kota()">Saya tinggal di</button>
+    <p id="kota" style="display: none;">Bandung</p>
+
+    <button onclick="Umur()">Umur saya adalah</button>
+    <p id="umur" style="display: none;">19</p>
+
+    <script>
+        function nama(){
+            var a = document.getElementById("nama");
+            a.style.display = 'block';
+        }
+
+        function kota(){
+            var b = document.getElementById("kota");
+            b.style.display = 'block';
+        }
+        function Umur(){
+            var c = document.getElementById("umur");
+            c.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

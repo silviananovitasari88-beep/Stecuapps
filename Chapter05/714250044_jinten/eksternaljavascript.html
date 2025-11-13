@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksternal JavaScript</title>
+</head>
+<body>
+    <script>
+        function myFuncition() {
+            document.getElementById("demo").innerHTML =
+            "Paragraf dari file  SCRIPT.JS - Silahkan dicoba klo error benerin ya? hahaha";
+        }
+    </script>
+    
+    <h2>Nyobaan Bikin Eksternal JavaScript</h2>
+    <p  id="demo">Ini paragraf bukan dari file Eksternal</p>
+    <button type="button" on click="function()">Try it</button>
+    <p>Contoh link diambil dari "Script.js".</p>
+    <p>(myFuncition harus disimpan di :script.js")</p>
+    <script src="script.js"></script>
+</body>
