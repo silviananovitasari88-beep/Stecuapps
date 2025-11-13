@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toko Alat Musik — Harmoni Indonesia</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Harmoni<span>Indonesia</span></a>
+      <nav class="main-nav">
+        <a href="#produk">Produk</a>
+        <a href="#kategori">Kategori</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak" class="btn">Kontak</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Buka menu">menu utama</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Temukan Suara yang Menginspirasi anda</h1>
+          <p>Gitar, keyboard, drum, dan aksesori berkualitas — siap meningkatkan potensi anda ke yang lebih berkualitas.</p>
+          <a href="#produk" class="btn btn-primary">Belanja Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kategori" class="container categories">
+      <h2>Kategori Populer</h2>
+      <div class="cats-grid">
+        <div class="cat-card">Gitar</div>
+        <div class="cat-card">Keyboard</div>
+        <div class="cat-card">Drum</div>
+        <div class="cat-card">Aksesoris</div>
+      </div>
+    </section>
+
+    <section id="produk" class="container products">
+      <h2>Produk Unggulan</h2>
+      <di.v class="product-grid">
+        <!-- Product 1 -->
+        <article class="product-card">
+          <img src="gitarklasik.jpg" alt="Gitar Classic"/>
+          <h3>Gitar Akustik Classic</h3>
+          <p class="price">Rp 1.250.000</p>
+          <p class="desc">Suara hangat, body nyaman untuk pemula.</p>
+          <div class="card-actions">
+            <button class="btn">Detail</button>
+            <button class="btn-outline">Tambah Keranjang</button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <img src="gitarelektrik.jpg" alt="Gitar Elektrik"/>
+          <h3>Gitar Elektrik X-Series</h3>
+          <p class="price">Rp 3.750.000</p>
+          <p class="desc">Pickup humbucker, neck nyaman, cocok untuk jamming.</p>
+          <div class="card-actions">
+            <button class="btn">Detail</button>
+            <button class="btn-outline">Tambah Keranjang</button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <img src="keyboard.jpg" alt="Keyboard 61 Keys"/>
+          <h3>Keyboard 61 Keys</h3>
+          <p class="price">Rp 2.100.000</p>
+          <p class="desc">Lumayan untuk latihan dan rekaman, fitur lengkap.</p>
+          <div class="card-actions">
+            <button class="btn">Detail</button>
+            <button class="btn-outline">Tambah Keranjang</button>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <img src="drumimages.jpeg" alt="Drum Elektrik"/>
+          <h3>Set Drum Elektrik</h3>
+          <p class="price">Rp 5.400.000</p>
+          <p class="desc">Sound jernih dan cocok untuk jamming.</p>
+          <div class="card-actions">
+            <button class="btn">Detail</button>
+            <button class="btn-outline">Tambah Keranjang</button>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <img src="mic.jpg" alt="Mikrofon Condenser"/>
+          <h3>Mikrofon Condenser Studio</h3>
+          <p class="price">Rp 1.950.000</p>
+          <p class="desc">Rekam vokal & instrumen dengan kejernihan tinggi.</p>
+          <div class="card-actions">
+            <button class="btn">Detail</button>
+            <button class="btn-outline">Tambah Keranjang</button>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <img src="ampli_images.jpeg" alt="Amplifier Gitar"/>
+          <h3>Amplifier Tube 20W</h3>
+          <p class="price">Rp 2.750.000</p>
+          <p class="desc">Tone hangat, ideal untuk latihan dan rekaman kecil.</p>
+          <div class="card-actions">
+            <button class="btn">Detail</button>
+            <button class="btn-outline">Tambah Keranjang</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tentang" class="container about">
+      <h2>Tentang HarmoniIndonesia</h2>
+      <p>HarmoniIndonesia berdiri untuk menyediakan alat musik berkualitas dengan harga pas dan layanan ramah. Kami melayani pengiriman nasional dan menyediakan garansi resmi pada beberapa produk.</p>
+    </section>
+
+    <section id="kontak" class="container contact">
+      <h2>Kontak</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih, pesan terkirim!')">
+        <input type="text" placeholder="Nama" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Pesan" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p> <span id="year"></span> HarmoniStore — Semua hak cipta dilindungi.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // kecil: tombol menu untuk layar kecil dan update tahun footer
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
