@@ -6,19 +6,24 @@
     <title>Dasar Javascript</title>
 </head>
 <body>
-    <h2>Apa yang bisa dilakukan JavaScript?</h2>
-
-    <p id="demo"></p>
+    <h2>JavaScript Menggunakan geolocation</h2>
+<p> Klik Tombol Untuk Menampilkan Lokasi</p>
+ <button onclick="getLocation()">klik disini</button>
+<p id="demo"></p>
 <script>
     const x = document.getElementById("demo");
     function getLocation() {
         try {
-    navigator.geolocation.getCurrentPosition(showposition);
+    navigator.geolocation.getCurrentPosition
+    (showposition);
         } catch {
-            x.innerHTML =
-            "Latitude: " +
-            position.coords.latitude +
-            " <br>Longitude: " +
-            position.coords.longitude;
+            x.innerHTML = err;
+        }
+    }function showposition(position){
+        x.innerHTML =
+            "Latitude: " +  position.coords.latitude +
+            " <br>Longitude: " +   position.coords.longitude;
         }
         </script>
+        </body>
+        </html>
