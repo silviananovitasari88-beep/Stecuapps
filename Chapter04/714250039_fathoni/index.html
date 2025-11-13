@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAREG MOAL ? - Kuliner Lezat Nusantara</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #ff8566;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .menu-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #ff6347;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.03);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            color: #ff6347;
+            margin: 10px;
+        }
+
+        .menu-item p {
+            margin: 0 10px 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ff6347;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WAREG MOAL ?</h1>
+        <p>“MOAL WAREG”</p>
+    </header>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>Selamat Datang di WAREG MOAL ?</div>
+    </section>
+
+    <section class="container" id="menu">
+        <h2 class="menu-title">Menu Andalan Kami 🍴</h2>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="WhatsApp Image 2025-11-05 at 13.32.45_90d2f8e4.jpg" alt="Nasi Goreng">
+                <h3>Nasi Goreng Spesial</h3>
+                <p>Nasi goreng khas dengan bumbu rahasia dan topping melimpah.</p>
+                <button onclick="pesan('Nasi Goreng Spesial')">Pesan Sekarang</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="WhatsApp Image 2025-11-05 at 13.32.45_12c55c8d.jpg" alt="Ayam Geprek">
+                <h3>Ayam Geprek Level Gahar</h3>
+                <p>Ayam crispy digeprek dengan sambal super pedas, bikin nagih!</p>
+                <button onclick="pesan('Ayam Geprek Level Gahar')">Pesan Sekarang</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="WhatsApp Image 2025-11-05 at 13.33.04_cc5e668a.jpg" alt="Sate Ayam">
+                <h3>Sate Ayam Madura</h3>
+                <p>Sate ayam dengan bumbu kacang kental dan lontong lembut.</p>
+                <button onclick="pesan('Sate Ayam Madura')">Pesan Sekarang</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="WhatsApp Image 2025-11-05 at 13.37.09_9ca46863.jpg" alt="Es Teh Manis">
+                <h3>Es Teh Manis Madep</h3>
+                <p>Minuman klasik penyegar tenggorokan, manis pas di hati.</p>
+                <button onclick="pesan('Es Teh Manis Segar')">Pesan Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="kontak">
+        <h2 class="menu-title">Hubungi Kami 📞</h2>
+        <p style="text-align:center;">
+            📍 Alamat: Jl. Kuliner No. 99, Bandung<br>
+            ☎️ Telepon: 0812-3456-7890<br>
+            📧 Email: waregmoal@gmail.com
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 WAREG MOAL ? | Semua Hak Dilindungi
+    </footer>
+
+    <script>
+        function pesan(menu) {
+            alert("Kamu memesan: " + menu + " 🍽️\nTerima kasih sudah wareg di WAREG MOAL ?");
+        }
+    </script>
+
+</body>
+</html>
