@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Klik tombol untuk menampilkan koordinat</p>
+
+<button onclick="ShowLocation()">Tampilkan Koordinat</button>
+
+<script>
+const x = document.getElementById("demo");
+
+const long = -6.874412760925859;
+const lat = 107.57599890783648;
+
+function ShowLocation() {
+  x.innerHTML = "Latitude: " + lat + "<br>Longitude: " + long;
+}
+</script>
+</body>
+</html>
