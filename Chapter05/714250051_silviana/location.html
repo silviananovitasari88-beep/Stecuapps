@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+<body>
+    
+    <h2>Penggunaan API Geolocation</h2>
+    <h3>Klik tombol untuk menampilkan koordinat.</h3>
+    <button onclick="getLocation()">Cek Lokasi Saya</button>
+    
+    <p id="demo">Menunggu interaksi...</p>
+    
+    <script>
+        const x = document.getElementById("demo");
+        
+        function getLocation() {
+            // PERBAIKAN 2: Menggunakan pengecekan if/else yang benar
+            if (navigator.geolocation) {
+                // Panggil fungsi Geolocation
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                // Jika browser tidak mendukung
+                x.innerHTML = "Geolocation tidak didukung oleh browser ini.";
+            }
+        }
+        
+        function showPosition(position) {
+            // PERBAIKAN 3: Menggunakan 'position' dan 'longitude' (huruf kecil)
+            x.innerHTML = 
+            "Latitude: " +
+            position.coords.latitude +
+            "<br>Longitude: " +
+            position.coords.longitude; 
+        }
+
+        function showError(error) {
+            let message = "";
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    message = "Pengguna menolak permintaan Geolocation.";
+                    break;
+                // PERBAIKAN 4: Menghapus spasi pada konstanta error
+                case error.POSITION_UNAVAILABLE: 
+                    message = "Informasi lokasi tidak tersedia.";
+                    break;
+                // PERBAIKAN 4: Menghapus spasi pada konstanta error
+                case error.TIMEOUT:
+                    message = "Waktu permintaan lokasi habis.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    message = "Terjadi kesalahan yang tidak diketahui.";
+                    break;
+            }
+            // Menampilkan pesan error di elemen <p id="demo">
+            x.innerHTML = message;
+        }
+    </script>
+    
+</body>
+</html>
