@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Chapter 05</title>
+</head>
+<body>
+    <button onclick="nama()">Hello Nama Saya</button>
+    <p id="teks" style="display: none;">Fergie</p>
+
+    <button onclick="kota()">Saya Lahir Di Kota</button>
+
+    <p id="kota" style="display: none;">Bandung</p>
+
+    <script>
+        function nama(){
+            var a = document.getElementById("teks");
+           
+        a.style.display = 'block';
+       
+        }
+
+        function kota(){
+             var b = document.getElementById("kota");
+              b.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
