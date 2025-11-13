@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warung Kentang Goreng</title>
+<style>
+  /* Gaya minimal agar mudah dibaca di HP & laptop */
+  body{font-family: system-ui, Arial, sans-serif; max-width: 680px; margin: 32px auto; padding: 0 16px; line-height: 1.5}
+  header, section{ margin-bottom: 24px}
+  h1{ background-color: orange ;
+    margin: 0 0 8px 0}
+  ul{padding-left: 18px}
+  .price{font-weight: 700}
+  input, select, textarea{width:100%; padding:8px; margin-top:6px; box-sizing: border-box}
+  button{padding:10px 14px; border:0; background:#111; color:#fff; cursor:pointer}
+  button:hover{opacity:.9}
+  footer{margin-top:24px; color:#666}
+</style>
+
+<header>
+  <h1> Kentang Bang Juned</h1>
+  <p>Hangat, renyah, dan dibuat setiap hari.</p>
+</header>
+
+<section>
+  <h2>Menu</h2>
+  <ul>
+    <li> Original — <span class="price">15K</span></li>
+    <li> Balado — <span class="price">17K</span></li>
+    <li>Keju — <span class="price">19K</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pemesanan</h2>
+  <form onsubmit="event.preventDefault(); alert('Terima kasih! Pesanan demo dicatat.');">
+    <label>Nama
+      <input required placeholder="Nama lengkap">
+    </label>
+    <br><br>
+    <label>No. WhatsApp
+      <input required placeholder="08xxxxxxxxxx">
+    </label>
+    <br><br>
+    <label>Pilih Menu
+      <select>
+        <option>Original</option>
+        <option>Balado</option>
+        <option>BBQ</option>
+        <option>Keju</option>
+      </select>
+    </label>
+    <label>Catatan
+      <textarea rows="3" placeholder="mis: level pedas, tanpa garam, dll"></textarea>
+    </label>
+    <br><br>
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+</section>
+
+<footer>
+  <small>© 2025 Kentang Bang Juned</small>
+</footer>
+</html>
