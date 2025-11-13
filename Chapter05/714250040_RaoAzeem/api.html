@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<Html>
+<p id="demo"></p>
+<script>
+const x = document.getElementById("demo");
+
+function getlocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation tidak didukung oleh browser ini.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML =
+        "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+    x.innerHTML = "Gagal mendapatkan lokasi: " + error.message;
+}
+</script>
+
+<!-- Tombol untuk mencoba -->
+<button onclick="getlocation()">Dapatkan Lokasi</button> 
