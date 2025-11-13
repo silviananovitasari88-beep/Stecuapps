@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript Menggunakan Geolocation</h1>
+    <p>klik button untuk menampilkan koordinat</p>
+    <button onclick="getLocation()">Klik disini</button>
+    <p id="demo"></p>
+    <script>
+        const x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation tidak didukung oleh browser ini.";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+</html>

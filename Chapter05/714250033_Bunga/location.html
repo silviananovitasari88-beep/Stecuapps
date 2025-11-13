@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Let's Talk!</h2>
+ <p id="demo">Dimana lokasinya?</p>
+    <button type="button" onclick="getLocation()">Yuk cari tau</button>
+    <p id="demo"></p>
+<script>
+const x = document.getElementById("demo");
+    function getLocation() {
+        try {
+            navigator.geolocation.getCurrentPosition (showPosition);
+        } catch {
+            x.innerHTML = err;
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML =
+        "Latitude: " + position.coords.latitude +
+        "<br> Longitude: " + position.coords.longitude;
+    }</script>
+</body>
+</html>
+
