@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu</title>
+   
+</head>
+<body>
+    <h2>Apa yang bisa dilakukan oleh Javascript?</h2>
+    <p>Javascript bisa mengganti atribut dari value</p>
+    <p>Studi kasus disini Javascript merubah nilai dari atribut sebuah gambar bola lampu</p>
+
+    <button
+    onclick="document.getElementById('myimage').src='mati.png'">
+Matikan Lampu
+</button>
+<img id="myimage" src="mati.png" style="width: 120px" />
+
+<button
+    onclick="document.getElementById('myimage').src='nyala.png'">
+Nyalakan Lampu
+</button>
+
+</body>
+</html>
