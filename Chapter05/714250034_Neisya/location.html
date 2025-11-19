@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan API Location</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Menggunakan Geolocation</h2>
+    <p>Klik button untuk menampilkan koordinat.</p>
+
+    <button onclick="getLocation()">Klik Disini</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+            if (!navigator.geolocation) {
+                x.innerHTML = "Geolocation tidak didukung oleh browser ini.";
+                return;
+            }
+
+            try {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } catch (err) {
+                x.innerHTML = err;
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML =
+                "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User menolak permintaan geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Informasi lokasi tidak tersedia.";
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "Permintaan lokasi melebihi batas waktu.";
+                    break;
+                default:
+                    x.innerHTML = "Terjadi kesalahan yang tidak diketahui.";
+            }
+        }
+    </script>
+
+</body>
+</html>
