@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+  background-color: #3949ab;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #18ca3f;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #1565c0;
+}
+
+/* Konten Utama */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content {
+  background-color: #fff;
+  width: 45%;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+}

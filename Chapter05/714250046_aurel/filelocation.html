@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi Javascript</title>
+</head>
+<body>
+    <h3>Javascript menggunakan Geolocation</h3>
+    <p>Klik button untuk menampilkan koordinat.</p>
+
+<button type="button" onclick="getlocation()">Klik disini</button>
+    <p id="demo"></p>
+    <script>
+        const x = document.getElementById("demo");
+        function getlocation() {
+            try {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } catch {
+                x.innerHTML = err;
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = 
+            "Latitude: " + 
+            position.coords.latitude + 
+            "<br>longtitude: " + 
+            position.coords.longtitude;
+        }
+    </script>
+</body>
+
+</html>
